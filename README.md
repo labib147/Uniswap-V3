@@ -8,7 +8,22 @@ Pending Changes at same URL
 
 Run the following commands to establish subgraph locally
 
-`npm install`
-`npm run codegen` or `yarn run codegen`
+1. `npm install`
+2. Use `npm run codegen` or `yarn run codegen` to run codegen
+3. `yarn run build`
+4. `yarn create-local`
+5. `yarn deploy-local`
+6. Then copy the end point of the "Queries(HTTP)" and paste it in the endpoint of the "graphclientrc.yml" file 
 
+If it does not exist already, create a new file. Name it "graphclientrc.yml" and paste the following inside: 
+```
+# .graphclientrc.yml
+sources:
+  - name: 
+    handler:
+      graphql:
+        endpoint: 
+```
 
+7. `yarn graphclient build`
+8. `yarn graphclient serve-dev`
