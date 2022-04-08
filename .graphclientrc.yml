@@ -1,0 +1,6 @@
+# .graphclientrc.yml
+sources:
+  - name: UniswapV3
+    handler:
+      graphql:
+        endpoint: http://127.0.0.1:8000/subgraphs/name/labib147/uniswap-v3
